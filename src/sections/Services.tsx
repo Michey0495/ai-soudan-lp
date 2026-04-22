@@ -31,16 +31,28 @@ export function Services() {
   return (
     <section id="service" className="section bg-brand-50/40">
       <div className="container-content">
-        <div className="max-w-2xl">
-          <h2 className="section-title">AIの相談所が提供するもの</h2>
-          <p className="section-lead">
-            生成AI研修を軸に、
-            <br className="hidden md:block" />
-            必要な会社には開発支援と月次顧問を組み合わせます。
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+          <div className="lg:col-span-3 order-2 lg:order-1">
+            <h2 className="section-title">AIの相談所が提供するもの</h2>
+            <p className="section-lead">
+              生成AI研修を軸に、
+              <br className="hidden md:block" />
+              必要な会社には開発支援と月次顧問を組み合わせます。
+            </p>
+          </div>
+          <div className="lg:col-span-2 order-1 lg:order-2">
+            <img
+              src="/images/illust-training.webp"
+              alt="生成AIセミナーで学び合う受講者と講師のイラスト"
+              className="w-full h-auto max-w-sm mx-auto"
+              width={1024}
+              height={1024}
+              loading="lazy"
+            />
+          </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="mt-10 md:mt-14 grid grid-cols-1 lg:grid-cols-3 gap-6">
           {services.map((s) => (
             <article
               key={s.title}

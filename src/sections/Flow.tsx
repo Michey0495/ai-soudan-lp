@@ -30,14 +30,26 @@ export function Flow() {
       <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-brand-50/60 to-transparent -z-10" />
 
       <div className="container-content">
-        <div className="max-w-2xl">
-          <h2 className="section-title">相談の流れ</h2>
-          <p className="section-lead">
-            3ステップで完了。まずは1回、状況を整理しにいらしてください。
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+          <div className="lg:col-span-3 order-2 lg:order-1">
+            <h2 className="section-title">相談の流れ</h2>
+            <p className="section-lead">
+              3ステップで完了。まずは1回、状況を整理しにいらしてください。
+            </p>
+          </div>
+          <div className="lg:col-span-2 order-1 lg:order-2">
+            <img
+              src="/images/illust-flow.webp"
+              alt="オンライン相談のイメージ、リラックスして話せる雰囲気"
+              className="w-full h-auto max-w-sm mx-auto"
+              width={1024}
+              height={1024}
+              loading="lazy"
+            />
+          </div>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+        <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 relative">
           {steps.map((s, i) => (
             <div key={s.num} className="relative">
               <div className="card h-full">

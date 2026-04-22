@@ -27,16 +27,28 @@ export function Problems() {
   return (
     <section className="section bg-white">
       <div className="container-content">
-        <div className="max-w-2xl">
-          <h2 className="section-title">こんな悩み、ありませんか</h2>
-          <p className="section-lead">
-            どれか1つでも当てはまったら、一度話しにいらしてください。
-            <br className="hidden md:block" />
-            社名も氏名も伏せて構いません。
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+          <div className="lg:col-span-3 order-2 lg:order-1">
+            <h2 className="section-title">こんな悩み、ありませんか</h2>
+            <p className="section-lead">
+              どれか1つでも当てはまったら、一度話しにいらしてください。
+              <br className="hidden md:block" />
+              社名も氏名も伏せて構いません。
+            </p>
+          </div>
+          <div className="lg:col-span-2 order-1 lg:order-2">
+            <img
+              src="/images/illust-problems.webp"
+              alt="AI導入に悩むビジネスパーソンの図"
+              className="w-full h-auto max-w-sm mx-auto"
+              width={1024}
+              height={1024}
+              loading="lazy"
+            />
+          </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 gap-5">
           {problems.map((p) => (
             <article key={p.no} className="card relative">
               <div className="flex items-start gap-4">
