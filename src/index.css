@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-white text-ink-900 font-sans;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+
+  h1, h2, h3, h4 {
+    @apply text-ink-900;
+    font-feature-settings: "palt";
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply mx-auto px-6 w-full max-w-content;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-coral-400 text-white px-8 py-4 font-semibold text-base shadow-soft transition-all;
+    @apply hover:bg-coral-500 hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-brand-500 text-brand-600 px-7 py-3.5 font-semibold text-base transition-all;
+    @apply hover:bg-brand-50;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-1 text-brand-600 font-medium transition-colors;
+    @apply hover:text-brand-700;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-white px-3 py-1.5 text-sm text-brand-700;
+  }
+
+  .section {
+    @apply py-24;
+  }
+
+  .section-tight {
+    @apply py-20;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-ink-900 mb-4;
+  }
+
+  .section-lead {
+    @apply text-base md:text-lg text-ink-700 leading-relaxed;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white border border-ink-100 p-6 shadow-card transition-all;
+  }
+
+  .card:hover {
+    @apply -translate-y-1 shadow-soft;
+  }
+
+  .label-industry {
+    @apply inline-block rounded-full bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1;
+  }
+}
+
+/* smooth underline for links */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+.link-underline:hover {
+  background-size: 100% 1px;
+}
