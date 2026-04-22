@@ -33,7 +33,7 @@ export function Hero() {
 
         {/* メインキャッチ(中央・大) */}
         <div className="text-center max-w-4xl mx-auto mb-10 xl:mb-12 relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.15] tracking-tight">
+          <h1 className="text-[2.25rem] sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.15] tracking-tight">
             <span className="block">AIの悩みを、</span>
             <span className="block mt-2">
               <span className="relative inline-block">

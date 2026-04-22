@@ -105,7 +105,7 @@ export function Cta() {
       <div className="container-content relative">
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight mb-4">
               最大60分、隣で一緒に考えます。
             </h2>
             <p className="text-base md:text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
